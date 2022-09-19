@@ -8,6 +8,8 @@ export interface IUser {
 }
 export interface IUserCreated extends IUser {
   id: string;
+  created_at: Date;
+  updated_at: Date;
   contacts: Contacts[];
 }
 

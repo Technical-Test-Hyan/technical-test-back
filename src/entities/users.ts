@@ -22,6 +22,12 @@ export class Users {
   @Exclude()
   password: string;
 
+  @Column()
+  created_at: Date;
+
+  @Column()
+  updated_at: Date;
+
   @OneToMany((type) => Contacts, (contacts) => contacts.user_id)
   contacts: Contacts[];
 }

@@ -17,6 +17,8 @@ const createUsersService = async ({
       full_name,
       password: hashedPassword,
       phone,
+      created_at: new Date(),
+      updated_at: new Date(),
       contacts: [],
     });
 
