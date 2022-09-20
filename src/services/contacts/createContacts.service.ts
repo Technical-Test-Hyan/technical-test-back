@@ -4,7 +4,7 @@ import { IContact, IContactCreated } from "../../interfaces/contacts";
 
 const createContactsService = async (
   user_id: string,
-  { email, full_name, phone }: IContact
+  { email, full_name, phone, description }: IContact
 ): Promise<IContactCreated> => {
   const contactRepository = AppDataSource.getRepository(Contacts);
 
@@ -13,6 +13,7 @@ const createContactsService = async (
     full_name,
     phone,
     user_id,
+    description,
   });
 
   await contactRepository.save(new_contacts);

@@ -14,6 +14,9 @@ export class Contacts {
   @Column()
   email: string;
 
+  @Column({ nullable: true })
+  description: string;
+
   @Column({ length: 15 })
   phone: string;
 

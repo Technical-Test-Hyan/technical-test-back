@@ -22,6 +22,9 @@ export class Users {
   @Exclude()
   password: string;
 
+  @Column({ nullable: true })
+  avatar_url: string;
+
   @Column()
   created_at: Date;
 
