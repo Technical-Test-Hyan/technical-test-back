@@ -5,6 +5,9 @@
   "repository": "git@github.com:Technical-Test-Hyan/technical-test-back.git",
   "author": "Hyan Lopes <hyanlopess97@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "16.14.2"
+  },
   "scripts": {
     "dev": "ts-node-dev src/app.ts",
     "typeorm": "typeorm-ts-node-commonjs",
