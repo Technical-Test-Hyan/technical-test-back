@@ -12,4 +12,5 @@ export const contactsCreateSchema: SchemaOf<IContact> = yup.object().shape({
       /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/,
       "Invalid format, must be like : 00 12345 6789"
     ),
+  description: yup.string(),
 });
