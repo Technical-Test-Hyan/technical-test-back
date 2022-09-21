@@ -12,7 +12,7 @@ This is an Api for you to control your contacts. A simple but very usable propos
 - Take control of your contacts
 
 
-## Your api link
+## Our api link
 
 [API](https://contacts-api-hyan.herokuapp.com/)
 
