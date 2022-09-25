@@ -40,7 +40,10 @@ Install the dependencies
 ```bash
   yarn
 ```
-In the file .env, put our credentials to access your database
+In the file .env, put our credentials to access your database:
+Check the .env.example to see how the configuration was done
+
+
 
 Run the migrations
 
