@@ -40,10 +40,13 @@ Install the dependencies
 ```bash
   yarn
 ```
-In the file .env, put our credentials to access your database:
+In the file .env, put our credentials to access your database
+
 Check the .env.example to see how the configuration was done
 
-
+```bash
+  DATABASE_URL="postgres://"your username of postgres":"your password of postgres"@localhost:5432/"your database name of postgres""
+```
 
 Run the migrations
 
