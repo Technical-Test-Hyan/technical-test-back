@@ -26,6 +26,8 @@ describe("Create an user returning a hashed password", () => {
     };
 
     const newUser = await createUsersService(user);
+
+    expect(newUser.password == user.password).toBeFalsy();
   });
 });
 
