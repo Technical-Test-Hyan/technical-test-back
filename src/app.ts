@@ -1,7 +1,7 @@
 import express from "express";
 import { appRoutes } from "./routes";
 import { errorMiddleware } from "./middlewares/error.middleware";
-import { Request, Response } from "express";
+
 import "express-async-errors";
 import "reflect-metadata";
 const app = express();
@@ -10,12 +10,7 @@ app.use(express.json());
 app.use(cors());
 appRoutes(app);
 
-app.get("/", (req: Request, res: Response) => {
-  res.status(200).json({
-    message: "Hello World",
-  });
-});
-
 app.use(errorMiddleware);
 
-app.listen(process.env.PORT || 3000);
+// app.listen(process.env.PORT || 3000);
+export default app;

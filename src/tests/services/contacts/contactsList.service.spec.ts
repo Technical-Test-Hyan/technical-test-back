@@ -3,8 +3,9 @@ import { DataSource } from "typeorm";
 import { AppDataSource } from "../../../data-source";
 import createUsersService from "../../../services/users/createUsers.service";
 import createContactsService from "../../../services/contacts/createContacts.service";
+import listUsersService from "../../../services/users/listUsers.service";
 
-describe("Create a contact", () => {
+describe("List contacts", () => {
   let connection: DataSource;
 
   beforeAll(async () => {
@@ -17,7 +18,7 @@ describe("Create a contact", () => {
     await connection.destroy();
   });
 
-  test("User can create a contact", async () => {
+  test("User can list your contacts", async () => {
     const user = {
       email: "hyan@email.com",
       password: "1234Lopes!",
@@ -32,7 +33,8 @@ describe("Create a contact", () => {
       email: "test@email.com",
       phone: "12345678",
     });
-
-    expect(contact.email).toEqual("test@email.com");
+    const contacts = await listUsersService(newUser.id);
+    console.log(contacts);
+    expect(contacts.contacts.length).toEqual(1);
   });
 });
