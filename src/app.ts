@@ -1,6 +1,6 @@
 import express from "express";
-import { appRoutes } from "./routes";
 import { errorMiddleware } from "./middlewares/error.middleware";
+import { appRoutes } from "./routes";
 
 import "express-async-errors";
 import "reflect-metadata";
@@ -12,5 +12,5 @@ appRoutes(app);
 
 app.use(errorMiddleware);
 
-// app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
 
