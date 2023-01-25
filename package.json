@@ -6,7 +6,7 @@
   "author": "Hyan Lopes <hyanlopess97@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "16.14.2"
+    "node": "16.18.1"
   },
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
