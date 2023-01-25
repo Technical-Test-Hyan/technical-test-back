@@ -8,6 +8,9 @@
   "engines": {
     "node": "16.18.1"
   },
+  {
+  "type": "module"
+},
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "typeorm": "typeorm-ts-node-commonjs",
